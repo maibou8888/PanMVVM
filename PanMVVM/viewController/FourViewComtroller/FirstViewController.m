@@ -31,6 +31,7 @@
     
     [self.viewModel.requestCommand execute:nil];
     [self.viewModel.requestCommand.errors subscribe:self.viewModel.errors];
+    [self.viewModel.requestCommand.executing subscribe:self.viewModel.excutingSignal];
     
     [[RACObserve(self.viewModel, model) ignore:nil] subscribeNext:^(NSArray * responceArray) {
         NSLog(@"responceArray %@",responceArray);

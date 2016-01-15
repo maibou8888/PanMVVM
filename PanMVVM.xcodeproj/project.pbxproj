@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		31DFC5042DD99009E90D8BAE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DECB808AB2E8857B1524207F /* libPods.a */; };
 		6452113B1C4792320098D5D8 /* PanModelServicesImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6452113A1C4792320098D5D8 /* PanModelServicesImpl.m */; };
+		64A412F81C48F0FD00312CAE /* MRCLoadingTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A412F61C48F0FD00312CAE /* MRCLoadingTitleView.m */; };
+		64A412F91C48F0FD00312CAE /* MRCLoadingTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64A412F71C48F0FD00312CAE /* MRCLoadingTitleView.xib */; };
+		64A412FF1C48F2D600312CAE /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A412FE1C48F2D600312CAE /* UIViewExt.m */; };
 		6B05F9AC1C3FFEDA00ECEF2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B05F9AB1C3FFEDA00ECEF2B /* main.m */; };
 		6B05F9AF1C3FFEDA00ECEF2B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B05F9AE1C3FFEDA00ECEF2B /* AppDelegate.m */; };
 		6B05F9B51C3FFEDA00ECEF2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B05F9B31C3FFEDA00ECEF2B /* Main.storyboard */; };
@@ -186,6 +189,12 @@
 		645211381C47920B0098D5D8 /* PanModelServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PanModelServices.h; path = protocol/PanModelServices.h; sourceTree = "<group>"; };
 		645211391C4792320098D5D8 /* PanModelServicesImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PanModelServicesImpl.h; path = protocol/PanModelServicesImpl.h; sourceTree = "<group>"; };
 		6452113A1C4792320098D5D8 /* PanModelServicesImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PanModelServicesImpl.m; path = protocol/PanModelServicesImpl.m; sourceTree = "<group>"; };
+		6495B6501C4922A800FB6D90 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		64A412F51C48F0FD00312CAE /* MRCLoadingTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRCLoadingTitleView.h; path = viewController/customView/MRCLoadingTitleView.h; sourceTree = "<group>"; };
+		64A412F61C48F0FD00312CAE /* MRCLoadingTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MRCLoadingTitleView.m; path = viewController/customView/MRCLoadingTitleView.m; sourceTree = "<group>"; };
+		64A412F71C48F0FD00312CAE /* MRCLoadingTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MRCLoadingTitleView.xib; path = viewController/customView/MRCLoadingTitleView.xib; sourceTree = "<group>"; };
+		64A412FD1C48F2D600312CAE /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		64A412FE1C48F2D600312CAE /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
 		6B05F9A71C3FFEDA00ECEF2B /* PanMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B05F9AB1C3FFEDA00ECEF2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6B05F9AD1C3FFEDA00ECEF2B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -429,6 +438,26 @@
 			name = viewModel;
 			sourceTree = "<group>";
 		};
+		64A412F41C48F00C00312CAE /* customview */ = {
+			isa = PBXGroup;
+			children = (
+				64A412F51C48F0FD00312CAE /* MRCLoadingTitleView.h */,
+				64A412F61C48F0FD00312CAE /* MRCLoadingTitleView.m */,
+				64A412F71C48F0FD00312CAE /* MRCLoadingTitleView.xib */,
+			);
+			name = customview;
+			sourceTree = "<group>";
+		};
+		64A412FC1C48F2D600312CAE /* UIViewExt */ = {
+			isa = PBXGroup;
+			children = (
+				64A412FD1C48F2D600312CAE /* UIViewExt.h */,
+				64A412FE1C48F2D600312CAE /* UIViewExt.m */,
+			);
+			name = UIViewExt;
+			path = Vendor/UIViewExt;
+			sourceTree = "<group>";
+		};
 		6B05F99E1C3FFEDA00ECEF2B = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +484,7 @@
 				6B5CC69E1C40D9B400FCAFDF /* Model */,
 				6B05F9C61C40009F00ECEF2B /* protocol */,
 				6B0710AD1C40085D00CE03D2 /* viewModel */,
+				64A412F41C48F00C00312CAE /* customview */,
 				6B0710B71C400A7A00CE03D2 /* viewController */,
 				6B05F9AA1C3FFEDA00ECEF2B /* Supporting Files */,
 			);
@@ -595,6 +625,7 @@
 		6B5CC6D51C40F4B700FCAFDF /* verder */ = {
 			isa = PBXGroup;
 			children = (
+				64A412FC1C48F2D600312CAE /* UIViewExt */,
 				6B5CC6881C40D84300FCAFDF /* TWMessageBarManager */,
 			);
 			name = verder;
@@ -880,6 +911,7 @@
 				6B5CC7971C40F4C600FCAFDF /* setting@2x.jpg in Resources */,
 				6B5CC7721C40F4C600FCAFDF /* friend@2x.jpg in Resources */,
 				6B5CC7B51C40F4C600FCAFDF /* friend@3x.jpg in Resources */,
+				64A412F91C48F0FD00312CAE /* MRCLoadingTitleView.xib in Resources */,
 				6B5CC7911C40F4C600FCAFDF /* QQ@2x.png in Resources */,
 				6B5CC7781C40F4C600FCAFDF /* info@2x.png in Resources */,
 				6B5CC79C1C40F4C600FCAFDF /* time@2x.png in Resources */,
@@ -1067,6 +1099,7 @@
 				6B5CC6C81C40E17200FCAFDF /* ThirdViewModel.m in Sources */,
 				6B5CC6B81C40E08800FCAFDF /* ThirdViewController.m in Sources */,
 				6B5CC6CE1C40E3AE00FCAFDF /* PanRouter.m in Sources */,
+				64A412F81C48F0FD00312CAE /* MRCLoadingTitleView.m in Sources */,
 				6B5CC6A91C40DFA700FCAFDF /* HomePageViewController.m in Sources */,
 				6B5CC6A61C40DE6D00FCAFDF /* MRCTabBarController.m in Sources */,
 				6B5CC7ED1C41012300FCAFDF /* DetailViewController.m in Sources */,
@@ -1083,6 +1116,7 @@
 				6BF796521C40077D0093605E /* PanViewModelServicesImpl.m in Sources */,
 				6B0710BA1C400AC500CE03D2 /* PanViewController.m in Sources */,
 				6B5CC6C21C40E14300FCAFDF /* FirstViewModel.m in Sources */,
+				64A412FF1C48F2D600312CAE /* UIViewExt.m in Sources */,
 				6B5CC6D11C40E55900FCAFDF /* HomePageViewModel.m in Sources */,
 				6B5CC6C51C40E15900FCAFDF /* SecondViewModel.m in Sources */,
 			);
@@ -1095,6 +1129,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6B05F9B41C3FFEDA00ECEF2B /* Base */,
+				6495B6501C4922A800FB6D90 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

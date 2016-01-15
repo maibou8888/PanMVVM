@@ -10,6 +10,7 @@
 #import "PanViewModel.h"
 
 #import "TWMessageBarManager.h"
+#import "MRCLoadingTitleView.h"
 
 @interface PanViewController ()
 
@@ -50,6 +51,22 @@
 }
 
 - (void)bindViewModel {
+    
+    UIView *titleView = self.navigationItem.titleView;
+    MRCLoadingTitleView *loadingTitleView = [[NSBundle mainBundle] loadNibNamed:@"MRCLoadingTitleView" owner:nil options:nil].firstObject;
+    loadingTitleView.frame = CGRectMake((SW - loadingTitleView.width) / 2.0, 0,loadingTitleView.width, loadingTitleView.height);
+    
+    //progress
+    @weakify(self)
+    [self.viewModel.excutingSignal subscribeNext:^(NSNumber *executing) {
+        @strongify(self)
+        if (executing.boolValue) {
+            self.navigationItem.titleView = loadingTitleView;
+        } else {
+            self.navigationItem.titleView = titleView;
+        }
+    }];
+
     //处理error
     [self.viewModel.errors subscribeNext:^(NSError *error) {
         MRCError(error.localizedDescription);

@@ -26,6 +26,9 @@
 //errorSignal
 @property (nonatomic, strong, readonly) RACSubject *errors;
 
+//excutingSignal
+@property (nonatomic, strong, readonly) RACSubject *excutingSignal;
+
 // viewWillDisappear signal
 @property (nonatomic, strong, readonly) RACSubject *willDisappearSignal;
 

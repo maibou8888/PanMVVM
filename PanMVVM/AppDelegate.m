@@ -46,6 +46,8 @@
     //黑色背景 白色文字
     [UINavigationBar appearance].barStyle  = UIBarStyleBlack;
     [UINavigationBar appearance].tintColor = [UIColor whiteColor];
+    [UINavigationBar appearance].titleTextAttributes = @{NSFontAttributeName:[UIFont boldSystemFontOfSize:19],
+                                                         NSForegroundColorAttributeName:[UIColor whiteColor]};
 }
 
 @end

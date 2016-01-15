@@ -53,6 +53,7 @@
 
 #import "TWMessageBarManager.h"
 #import "AppDelegate.h"
+#import "UIViewExt.h"
 
 //nslog
 #ifdef DEBUG

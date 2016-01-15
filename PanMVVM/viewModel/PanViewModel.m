@@ -20,6 +20,7 @@
 @synthesize services = _services;
 @synthesize params   = _params;
 @synthesize errors   = _errors;
+@synthesize excutingSignal   = _excutingSignal;
 @synthesize willDisappearSignal = _willDisappearSignal;
 
 + (instancetype)allocWithZone:(struct _NSZone *)zone {
@@ -48,6 +49,11 @@
 - (RACSubject *)errors {
     if (!_errors) _errors = [RACSubject subject];
     return _errors;
+}
+
+- (RACSubject *)excutingSignal {
+    if (!_excutingSignal) _excutingSignal = [RACSubject subject];
+    return _excutingSignal;
 }
 
 - (RACSubject *)willDisappearSignal {
