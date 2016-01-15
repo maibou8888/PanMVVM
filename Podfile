@@ -1,0 +1,5 @@
+pod 'ReactiveCocoa'
+pod 'ReactiveViewModel'
+pod 'Mantle'
+pod 'MBProgressHUD', '~> 0.9'
+pod 'AFNetworking-RACExtensions'
