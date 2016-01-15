@@ -15,19 +15,15 @@
 
 @required
 
-// Initialization method. This is the preferred way to create a new view.
-//
-// viewModel - corresponding view model
-//
-// Returns a new view.
+//绑定viewModel
 - (instancetype)initWithViewModel:(id<PanViewModelProtocol>)viewModel;
 
-// The `viewModel` parameter in `-initWithViewModel:` method.
+//当前视图的viewModel
 @property (nonatomic, strong, readonly) id<PanViewModelProtocol> viewModel;
 
 @optional
 
-// Binds the corresponding view model to the view.
+//绑定方法
 - (void)bindViewModel;
 
 
