@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		31DFC5042DD99009E90D8BAE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DECB808AB2E8857B1524207F /* libPods.a */; };
+		640A2EB41C4C74C4006EC3B5 /* UINavigationItem+MRCBackBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 640A2EB31C4C74C4006EC3B5 /* UINavigationItem+MRCBackBarButtonItem.m */; };
 		6452113B1C4792320098D5D8 /* PanModelServicesImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6452113A1C4792320098D5D8 /* PanModelServicesImpl.m */; };
 		64A412F81C48F0FD00312CAE /* MRCLoadingTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A412F61C48F0FD00312CAE /* MRCLoadingTitleView.m */; };
 		64A412F91C48F0FD00312CAE /* MRCLoadingTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64A412F71C48F0FD00312CAE /* MRCLoadingTitleView.xib */; };
@@ -186,6 +187,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		640A2EB21C4C74C4006EC3B5 /* UINavigationItem+MRCBackBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINavigationItem+MRCBackBarButtonItem.h"; path = "viewController/customView/UINavigationItem+MRCBackBarButtonItem.h"; sourceTree = "<group>"; };
+		640A2EB31C4C74C4006EC3B5 /* UINavigationItem+MRCBackBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINavigationItem+MRCBackBarButtonItem.m"; path = "viewController/customView/UINavigationItem+MRCBackBarButtonItem.m"; sourceTree = "<group>"; };
 		645211381C47920B0098D5D8 /* PanModelServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PanModelServices.h; path = protocol/PanModelServices.h; sourceTree = "<group>"; };
 		645211391C4792320098D5D8 /* PanModelServicesImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PanModelServicesImpl.h; path = protocol/PanModelServicesImpl.h; sourceTree = "<group>"; };
 		6452113A1C4792320098D5D8 /* PanModelServicesImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PanModelServicesImpl.m; path = protocol/PanModelServicesImpl.m; sourceTree = "<group>"; };
@@ -441,6 +444,8 @@
 		64A412F41C48F00C00312CAE /* customview */ = {
 			isa = PBXGroup;
 			children = (
+				640A2EB21C4C74C4006EC3B5 /* UINavigationItem+MRCBackBarButtonItem.h */,
+				640A2EB31C4C74C4006EC3B5 /* UINavigationItem+MRCBackBarButtonItem.m */,
 				64A412F51C48F0FD00312CAE /* MRCLoadingTitleView.h */,
 				64A412F61C48F0FD00312CAE /* MRCLoadingTitleView.m */,
 				64A412F71C48F0FD00312CAE /* MRCLoadingTitleView.xib */,
@@ -1095,6 +1100,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B5CC69B1C40D84300FCAFDF /* TWMessageBarManager.m in Sources */,
+				640A2EB41C4C74C4006EC3B5 /* UINavigationItem+MRCBackBarButtonItem.m in Sources */,
 				6B0710B51C40090600CE03D2 /* PanViewModel.m in Sources */,
 				6B5CC6C81C40E17200FCAFDF /* ThirdViewModel.m in Sources */,
 				6B5CC6B81C40E08800FCAFDF /* ThirdViewController.m in Sources */,

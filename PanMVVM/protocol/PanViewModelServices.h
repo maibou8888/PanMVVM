@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PanViewModelProtocol.h"
 #import "PanModelServicesImpl.h"
 
 typedef void (^VoidBlock)();

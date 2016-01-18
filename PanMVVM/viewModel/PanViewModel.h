@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PanViewModelProtocol.h"
 
 @interface PanViewModel : NSObject<PanViewModelProtocol>
 

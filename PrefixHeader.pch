@@ -55,6 +55,9 @@
 #import "AppDelegate.h"
 #import "UIViewExt.h"
 
+#import "PanViewModelServices.h"
+#import "PanViewModelProtocol.h"
+
 //nslog
 #ifdef DEBUG
 #define NSLog(...) NSLog(__VA_ARGS__)

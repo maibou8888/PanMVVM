@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PanViewModelServices.h"
 
 @protocol PanViewModelServices;
 
