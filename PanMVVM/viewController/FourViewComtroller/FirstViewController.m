@@ -29,6 +29,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                                                                           target:nil action:nil];
+    self.navigationItem.rightBarButtonItem.rac_command = self.viewModel.detailCommand;
+    
+    //requestCommand
     [self.viewModel.requestCommand execute:nil];
     [self.viewModel.requestCommand.errors subscribe:self.viewModel.errors];
     [self.viewModel.requestCommand.executing subscribe:self.viewModel.excutingSignal];
@@ -36,11 +41,5 @@
     [[RACObserve(self.viewModel, model) ignore:nil] subscribeNext:^(NSArray * responceArray) {
         NSLog(@"responceArray %@",responceArray);
     }];
-    
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"detail"]
-                                                                              style:UIBarButtonItemStylePlain
-                                                                             target:nil
-                                                                             action:nil];
-    self.navigationItem.rightBarButtonItem.rac_command = self.viewModel.detailCommand;
 }
 @end
