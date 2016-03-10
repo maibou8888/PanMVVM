@@ -9,6 +9,12 @@
 #import "SecondViewModel.h"
 #import "DetailViewModel.h"
 
+@interface SecondViewModel ()
+
+@property (nonatomic , strong , readwrite) RACCommand *detailCommand;
+
+@end
+
 @implementation SecondViewModel
 
 -(void)initialize {

@@ -51,10 +51,10 @@
 }
 
 - (void)bindViewModel {
-    
+    //titleView
     UIView *titleView = self.navigationItem.titleView;
     MRCLoadingTitleView *loadingTitleView = [[NSBundle mainBundle] loadNibNamed:@"MRCLoadingTitleView" owner:nil options:nil].firstObject;
-    loadingTitleView.frame = CGRectMake((SW - loadingTitleView.width) / 2.0, 0,loadingTitleView.width, loadingTitleView.height);
+    loadingTitleView.origin = CGPointMake((SW - loadingTitleView.width) / 2.0, 0);
     
     //progress
     @weakify(self)

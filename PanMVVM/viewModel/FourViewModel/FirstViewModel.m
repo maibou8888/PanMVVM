@@ -9,6 +9,14 @@
 #import "FirstViewModel.h"
 #import "DetailViewModel.h"
 
+@interface FirstViewModel ()
+
+@property (nonatomic , strong , readwrite) NSArray *model;
+@property (nonatomic , strong , readwrite) RACCommand *requestCommand;
+@property (nonatomic , strong , readwrite) RACCommand *detailCommand;
+
+@end
+
 @implementation FirstViewModel
 
 -(void)initialize {

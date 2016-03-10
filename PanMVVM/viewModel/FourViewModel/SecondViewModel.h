@@ -10,6 +10,6 @@
 
 @interface SecondViewModel : PanViewModel
 
-@property (nonatomic , strong) RACCommand *detailCommand;
+@property (nonatomic , strong , readonly) RACCommand *detailCommand;
 
 @end

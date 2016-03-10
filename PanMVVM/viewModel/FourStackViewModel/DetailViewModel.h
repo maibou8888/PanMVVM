@@ -10,8 +10,8 @@
 
 @interface DetailViewModel : PanViewModel
 
-@property (nonatomic , strong) NSArray *model;
-@property (nonatomic , strong) NSString *projectID;
-@property (nonatomic , strong) RACCommand *requestCommand;
+@property (nonatomic , strong , readonly) NSArray *model;
+@property (nonatomic , strong , readonly) NSString *projectID;
+@property (nonatomic , strong , readonly) RACCommand *requestCommand;
 
 @end

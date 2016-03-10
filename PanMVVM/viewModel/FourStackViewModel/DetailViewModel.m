@@ -13,6 +13,10 @@
 
 @property (nonatomic , retain , readwrite) PanViewModelServicesImpl *services;
 
+@property (nonatomic , strong , readwrite) NSArray *model;
+@property (nonatomic , strong , readwrite) NSString *projectID;
+@property (nonatomic , strong , readwrite) RACCommand *requestCommand;
+
 @end
 
 @implementation DetailViewModel

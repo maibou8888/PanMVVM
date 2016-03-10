@@ -10,8 +10,8 @@
 
 @interface FirstViewModel : PanViewModel
 
-@property (nonatomic , strong) NSArray *model;
-@property (nonatomic , strong) RACCommand *requestCommand;
-@property (nonatomic , strong) RACCommand *detailCommand;
+@property (nonatomic , strong , readonly) NSArray *model;
+@property (nonatomic , strong , readonly) RACCommand *requestCommand;
+@property (nonatomic , strong , readonly) RACCommand *detailCommand;
 
 @end
